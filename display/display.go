@@ -1,4 +1,4 @@
-package sdk
+package display
 
 // display functions
 
