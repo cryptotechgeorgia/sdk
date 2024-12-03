@@ -57,6 +57,10 @@ func (a *Notifier) WithPublisher(client Publisher) *Notifier {
 	return a
 }
 
+func (a *Notifier) GetPublisher() Publisher {
+	return a.publisher
+}
+
 func (a *Notifier) WithDestinationType(dstType DestinationType) *Notifier {
 	a.opts.DestinationType = dstType
 	return a
